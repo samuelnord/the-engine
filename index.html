@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,16 +28,16 @@
 body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);overflow:hidden;height:100vh;width:100vw}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(61,216,232,0.025) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(245,166,35,0.025) 0%,transparent 50%);pointer-events:none}
 .counter{position:fixed;top:28px;right:40px;font-family:'JetBrains Mono',monospace;font-size:17px;color:var(--text-dim);z-index:200;background:rgba(10,15,26,0.7);padding:6px 14px;border-radius:6px;border:1px solid var(--border);backdrop-filter:blur(8px)}
-.sb{position:fixed;left:0;top:0;bottom:0;width:240px;background:rgba(10,15,26,0.95);border-right:1px solid rgba(245,166,35,0.06);z-index:150;display:flex;flex-direction:column;padding:28px 0;backdrop-filter:blur(12px);overflow-y:auto}
+.sb{position:fixed;left:0;top:0;bottom:0;width:280px;background:rgba(10,15,26,0.95);border-right:1px solid rgba(245,166,35,0.06);z-index:150;display:flex;flex-direction:column;padding:28px 0;backdrop-filter:blur(12px);overflow-y:auto}
 .sb-logo{padding:0 20px 20px;font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:3px;color:var(--amber);border-bottom:1px solid rgba(245,166,35,0.08);margin-bottom:10px}
 .sb-i{padding:9px 20px;font-size:12.5px;color:var(--text-dim);cursor:pointer;transition:all .25s;border-left:2px solid transparent;display:flex;align-items:center;gap:9px}
 .sb-i:hover{color:var(--text);background:rgba(255,255,255,0.02)}
 .sb-i.on{color:var(--amber);background:var(--amber-glow);border-left-color:var(--amber);font-weight:600}
-.sb-i .n{font-family:'JetBrains Mono',monospace;font-size:9px;opacity:.4;min-width:20px}
+.sb-i .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,0.7);min-width:24px;font-weight:600}
 .sb-sep{height:1px;background:var(--border);margin:8px 20px}
-.prog{position:fixed;bottom:0;left:240px;right:0;height:3px;background:rgba(245,166,35,0.04);z-index:200}
+.prog{position:fixed;bottom:0;left:280px;right:0;height:3px;background:rgba(245,166,35,0.04);z-index:200}
 .prog-fill{height:100%;background:linear-gradient(90deg,var(--amber),var(--cyan));transition:width .5s}
-.sw{margin-left:240px;height:100vh;position:relative;overflow:hidden}
+.sw{margin-left:280px;height:100vh;position:relative;overflow:hidden}
 .sl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:48px 72px;opacity:0;transform:translateY(16px);transition:opacity .5s cubic-bezier(.4,0,.2,1),transform .5s cubic-bezier(.4,0,.2,1);pointer-events:none;overflow-y:auto}
 .sl.on{opacity:1;transform:translateY(0);pointer-events:all}
 .si{width:100%;max-width:1200px;display:flex;flex-direction:column;justify-content:center;min-height:55vh}
@@ -127,7 +126,7 @@ h3{font-size:20px;font-weight:400;color:var(--text-mid);line-height:1.55}
 .tbm-example{margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.03);border-radius:8px;border:1px solid var(--border)}
 .tbm-example p{font-size:12.5px;color:var(--text-mid);line-height:1.45}
 .tbm-example strong{color:var(--text)}
-.notes-panel{position:fixed;bottom:0;left:240px;right:0;max-height:38vh;background:rgba(8,12,22,0.97);border-top:2px solid var(--amber);z-index:300;overflow-y:auto;padding:18px 32px 22px;transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);backdrop-filter:blur(12px)}
+.notes-panel{position:fixed;bottom:0;left:280px;right:0;max-height:38vh;background:rgba(8,12,22,0.97);border-top:2px solid var(--amber);z-index:300;overflow-y:auto;padding:18px 32px 22px;transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);backdrop-filter:blur(12px)}
 .notes-panel.show{transform:translateY(0)}
 .notes-panel h5{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--amber);margin-bottom:10px;opacity:.7}
 .notes-panel .script{font-size:16px;line-height:1.75;color:var(--text-mid);max-width:840px}
@@ -398,14 +397,14 @@ h3{font-size:20px;font-weight:400;color:var(--text-mid);line-height:1.55}
 </div>
 
 <!-- 8: AI + FINOPS GATE -->
-<div class="sl" data-c="ai" data-time="~2 min" data-script="Component C. AI orchestration. Or as I call it, the test flight program. The problem is not that Ivoclar has too few AI ideas. It is that there is no structure to evaluate them. My approach: first, an AI scorecard. Same language as every other project. Value, effort, risk, but with one extra gate: data readiness. Because the best AI idea is useless if the data is not there. Second, non-negotiable guardrails. Data security, architecture standards, clear ownership. Third, a sandbox. Let people experiment safely, but with a clear path from pilot to MVP to production. And fourth, the FinOps gate. Before any AI scales, we check the unit cost. Does it save more money than it costs to run? Simple math. If not, we do not scale. AI competes in the same portfolio as classic IT. One flight board, one language.">
+<div class="sl" data-c="ai" data-time="~2 min" data-script="Component C. AI orchestration. Now, at Ivoclar, the real AI risk is not do we have enough data to train a model. The real risk is that people are already pasting company data into Perplexity, ChatGPT, Copilot, and nobody knows what goes where. So the question flips. It is not: is the data ready for AI? It is: is our data safe from AI? My approach has four parts. First, the AI radar. We find out what tools people are already using across all 56 subsidiaries. Who signed up for what? What company data goes into these tools? Today, nobody tracks this. Second, data classification. We create a simple traffic light. Green: public info, fine to use. Yellow: internal, needs approval first. Red: product formulas, patient data, pricing strategies. These never go into an external AI tool. Third, an approved tool list. Instead of fifty random AI subscriptions across the organization, the AI Review Board approves a short list. Approved tools get enterprise licenses with proper data agreements. Unapproved tools get flagged at procurement. Fourth, the FinOps gate. Before any AI solution scales, we check: does it save more money than it costs to run? If yes, scale. If no, stop. AI competes in the same portfolio as classic IT. One flight board, one language. That answers the case study question: how do you prioritize AI versus classic IT? You put them on the same board and let the scoring decide.">
   <div class="si">
     <div class="tag">C | AI Orchestration + FinOps Gate</div>
-    <h2>Enable <span class="hc">AI</span> with guardrails and <span class="hi">unit economics</span></h2>
+    <h2>Enable <span class="hc">AI</span> safely: know what leaves the building</h2>
     <div class="pil">
-      <div class="pil-c"><h4>AI Scorecard</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">A simple checklist for every AI idea</p><p>Is it useful? Is it doable? Is the data ready? If not all three, it waits.</p></div>
-      <div class="pil-c"><h4>Guardrails</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">The safety rules nobody can skip</p><p>Data must be secure. Architecture must be approved. Someone must own it.</p></div>
-      <div class="pil-c"><h4>Sandbox-to-Scale</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">Try small before you go big</p><p>Test it safely first. If it works, grow it step by step. Pilot &rarr; MVP &rarr; Production.</p></div>
+      <div class="pil-c"><h4>AI Radar</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">Know what tools people already use</p><p>Who uses Perplexity, ChatGPT, Copilot? What company data goes in? Today nobody tracks this.</p></div>
+      <div class="pil-c"><h4>Data Classification</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">Not all data can leave the building</p><p>Green: public info, OK to use. Yellow: internal, needs approval. Red: formulas, patient data, pricing. Never.</p></div>
+      <div class="pil-c"><h4>Approved Tool List</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">One short list instead of 50 random subscriptions</p><p>Approved tools get enterprise licenses with data agreements. Unapproved tools get flagged at procurement.</p></div>
       <div class="pil-c"><h4>FinOps Gate</h4><p style="font-size:12px;color:var(--text-dim);margin-bottom:4px">The money check before we scale</p><p>Does this AI save more than it costs to run? If yes, scale. If no, stop.</p></div>
     </div>
   </div>
